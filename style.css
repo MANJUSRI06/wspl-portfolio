@@ -35,6 +35,7 @@ nav {
 }
 
 .name {
+.name {
     color: aliceblue;
     font-weight: bold;
     font-style: oblique;
@@ -42,17 +43,22 @@ nav {
 }
 
 nav ul {
+nav ul {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
+nav ul li {
 nav ul li {
     margin-left: 20px;
 }
 
 nav ul li a {
+nav ul li a {
     color: aliceblue;
+    font-size: 18px;
     font-size: 18px;
     text-decoration: none;
 }
@@ -70,20 +76,38 @@ nav ul li a {
     padding: 20px;
     text-align: center;
 }
+    height: 100vh;
+    background-image: url('kevin-bhagat-zNRITe8NPqY-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(121, 18, 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
 
+h1, h3, p {
 h1, h3, p {
     font-size: 40px;
     margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
+.links {
 .links {
     margin-top: 20px;
 }
 
 .links a {
     margin: 0 10px;
+.links a {
+    margin: 0 10px;
 }
 
+.links a img {
 .links a img {
     width: 30px;
 }
@@ -101,13 +125,19 @@ h1, h3, p {
     align-items: center;
     max-width: 1200px;
     border: 2px solid rgb(121, 18, 2);
+    max-width: 1200px;
+    border: 2px solid rgb(121, 18, 2);
     padding: 20px;
 }
 
 .profile-photo {
     width: 400px;
     height: auto;
+    width: 400px;
+    height: auto;
     object-fit: cover;
+    margin-right: 40px;
+    border: 2px solid rgb(121, 18, 2);
     margin-right: 40px;
     border: 2px solid rgb(121, 18, 2);
 }
@@ -119,6 +149,7 @@ h1, h3, p {
 
 .about-text h1 {
     font-size: 36px;
+    color: rgb(121, 18, 2);
     color: rgb(121, 18, 2);
     margin-bottom: 20px;
 }
@@ -137,6 +168,14 @@ h1, h3, p {
     border: 3px solid rgb(121, 18, 2);
     max-width: 1200px;
     margin: 20px auto;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.experience-title {
+    font-size: 48px;
+    color: rgb(121, 18, 2);
+    margin-bottom: 30px;
 }
 
 .experience-title {
@@ -155,10 +194,12 @@ h1, h3, p {
     flex: 1;
     padding: 20px;
     background-color: rgb(121, 18, 2);
+    background-color: rgb(121, 18, 2);
     border: 2px solid rgb(121, 18, 2);
 }
 
 .column h2 {
+    color: #ff8181;
     color: #ff8181;
 }
 
@@ -172,6 +213,7 @@ h1, h3, p {
 }
 
 .column ul li p {
+.column ul li p {
     font-size: 20px;
     color: #fbd3d3;
 }
@@ -179,7 +221,9 @@ h1, h3, p {
 .certificates-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap: 10px;
+    margin-top: 20px;
     margin-top: 20px;
 }
 
@@ -187,13 +231,21 @@ h1, h3, p {
     width: 100%;
     height: auto;
     border: 2px solid rgb(121, 18, 2);
+    border: 2px solid rgb(121, 18, 2);
 }
 
 #project {
     background-color: rgb(243, 229, 211);
     color: rgb(121, 18, 2);
+    background-color: rgb(243, 229, 211);
+    color: rgb(121, 18, 2);
     padding: 50px;
     text-align: center;
+}
+
+.projects-title {
+    font-size: 48px;
+    margin-bottom: 30px;
 }
 
 .projects-title {
@@ -211,11 +263,15 @@ h1, h3, p {
 
 .hardware, .software {
     background-color: rgb(121, 18, 2);
+.hardware, .software {
+    background-color: rgb(121, 18, 2);
     padding: 20px;
     text-align: left;
     border: 2px solid rgb(121, 18, 2);
 }
 
+.hardware h2, .software h2 {
+    color: #FFFFFF;
 .hardware h2, .software h2 {
     color: #FFFFFF;
     font-size: 24px;
@@ -224,6 +280,7 @@ h1, h3, p {
 
 .project-type {
     font-size: 16px;
+    color: #ff8181;
     color: #ff8181;
     margin-bottom: 15px;
 }
@@ -241,9 +298,16 @@ h1, h3, p {
     margin-bottom: 15px;
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
 .github-link {
     display: inline-block;
     color: #FFFFFF;
+    background-color: rgb(47, 7, 1);
     background-color: rgb(47, 7, 1);
     padding: 10px 20px;
     text-decoration: none;
@@ -257,8 +321,11 @@ h1, h3, p {
 #contact {
     background-color: rgb(243, 229, 211);
     color: #ff8181;
+    background-color: rgb(243, 229, 211);
+    color: #ff8181;
     padding: 50px;
     text-align: center;
+    border: 3px solid rgb(47, 7, 1);
     border: 3px solid rgb(47, 7, 1);
     max-width: 800px;
     margin: 50px auto;
@@ -267,11 +334,13 @@ h1, h3, p {
 .contact-title {
     font-size: 36px;
     color: rgb(126, 20, 3);
+    color: rgb(126, 20, 3);
     margin-bottom: 15px;
 }
 
 .contact-description {
     font-size: 18px;
+    color: rgb(126, 20, 3);
     color: rgb(126, 20, 3);
     margin-bottom: 30px;
 }
@@ -280,11 +349,13 @@ h1, h3, p {
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    padding: 0 20px;
 }
 
 .form-group {
     margin-bottom: 20px;
     text-align: left;
+    width: 100%;
     width: 100%;
 }
 
@@ -299,8 +370,10 @@ input[type="email"], textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid rgb(47, 7, 1);
+    border: 1px solid rgb(47, 7, 1);
     border-radius: 8px;
     background-color: #fae0e0;
+    color: rgb(47, 7, 1);
     color: rgb(47, 7, 1);
 }
 
@@ -311,6 +384,7 @@ textarea {
 
 button[type="submit"] {
     padding: 10px 20px;
+    background-color: rgb(47, 7, 1);
     background-color: rgb(47, 7, 1);
     color: #FFFFFF;
     border: none;
