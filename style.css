@@ -27,7 +27,7 @@ html, body {
 }
 
 body {
-  padding-top: 90px;
+  padding-top: 80px;
   font-family: 'Segoe UI', Arial, sans-serif;
   color: var(--primary-dark);
   background: linear-gradient(135deg, var(--cream) 60%, var(--beige) 100%);
