@@ -232,3 +232,119 @@ nav.sticky {
   box-shadow: 0 4px 24px 0 var(--accent);
   border-color: var(--accent);
 }
+
+/* =====================
+   Responsive Design
+   ===================== */
+@media (max-width: 1100px) {
+  .about-content, .experience-container, .project-content {
+    gap: 18px;
+    padding: 18px;
+  }
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    padding-top: 64px;
+  }
+  nav {
+    height: 64px;
+    min-height: 64px;
+    max-height: 64px;
+    padding: 0 12px;
+  }
+  .about-content, .experience-container, .project-content {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 8px;
+    height: 64px;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100vw;
+    background: var(--primary-dark-glass);
+    box-shadow: 0 8px 32px 0 rgba(121,18,2,0.18);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    z-index: 1001;
+    padding: 0;
+    transition: var(--transition);
+  }
+  .nav-links.active {
+    display: flex;
+    animation: fadeInDown 0.5s;
+  }
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  nav ul li {
+    margin: 18px 0;
+    text-align: center;
+  }
+  .name {
+    font-size: 1.1rem;
+  }
+  .about-content, .experience-container, .project-content {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+  h1, h3, p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .contact-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    padding-top: 54px;
+  }
+  nav {
+    height: 54px;
+    min-height: 54px;
+    max-height: 54px;
+    padding: 0 2px;
+  }
+  .name {
+    font-size: 0.95rem;
+  }
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+  .about-text {
+    padding: 10px 6px;
+  }
+  .experience-title, .project-title {
+    font-size: 1.3rem;
+  }
+}
