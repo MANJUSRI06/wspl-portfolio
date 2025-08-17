@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contact.css" />
     <script src="script.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="name">Manjusri Shanmugakumar</div>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-             <li><a href="skills.html">Skills</a></li>
-            <li><a href="exp.html">Experience</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+      <div class="name">Manjusri Shanmugakumar</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="exp.html">Experience</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
     </nav>
     <section id="contact">
-    <h1 class="contact-title">Contact Me</h1>
-    <p class="contact-description">Feel free to share your thoughts or reach out with any questions.<br><b>Let,s Create a strong Network around us!!</b></p>
-    <div class="contact-container">
-        <form action="mailto:manjusri6526@gmail.com" method="post" enctype="text/plain">
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
+      <h1 class="contact-title">Contact Me</h1>
+      <p class="contact-description">
+        Feel free to share your thoughts or reach out with any questions.<br /><b
+          >Let,s Create a strong Network around us!!</b
+        >
+      </p>
+      <div class="contact-container">
+        <form
+          action="mailto:manjusri6526@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
 
-            <div class="form-group">
-                <label for="thoughts">Your Thoughts:</label>
-                <textarea id="thoughts" name="thoughts" rows="4" placeholder="Share your thoughts here" required></textarea>
-            </div>
+          <div class="form-group">
+            <label for="thoughts">Your Thoughts:</label>
+            <textarea
+              id="thoughts"
+              name="thoughts"
+              rows="4"
+              placeholder="Share your thoughts here"
+              required
+            ></textarea>
+          </div>
 
-            <button type="submit">Send Message</button>
+          <button type="submit" class="custom-btn">Send Message</button>
         </form>
-    </div>
-</section>
-</body>
+      </div>
+    </section>
+  </body>
 </html>

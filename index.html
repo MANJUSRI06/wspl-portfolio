@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="name">Manjusri Shanmugakumar</div>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="exp.html">Experience</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+      <div class="name">Manjusri Shanmugakumar</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="exp.html">Experience</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
     </nav>
 
     <section class="home">
-        <h1>Hello!</h1>
-        <h1>I'm Manjusri Shanmugakumar</h1>
-        <h3>Passionate about developing responsive webpages.</h3>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/manjusri-shanmuga-kumar-9a761b28a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                <img src="link logo.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/MANJUSRI06" target="_blank">
-                <img src="github icon.png" alt="GitHub">
-            </a>
-
-            <p>Email: manjusri6526@gmail.com</p>
-
-
+      <div class="home-container">
+        <div class="profile-photo-container">
+          <img
+            src="images/profile.jpeg"
+            alt="Profile Photo"
+            class="profile-photo-rect"
+          />
         </div>
+        <div class="home-details">
+          <h1>Hello!</h1>
+          <h1>I'm Manjusri Shanmugakumar</h1>
+          <h3>Passionate about developing responsive webpages.</h3>
+          <div class="links">
+            <div class="links-row">
+              <a
+                href="https://www.linkedin.com/in/manjusri-shanmuga-kumar-9a761b28a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+              >
+                <img src="images/link logo.png" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/MANJUSRI06" target="_blank">
+                <img src="images/github icon.png" alt="GitHub" />
+              </a>
+            </div>
+            <p>Email: manjusri6526@gmail.com</p>
+            <a
+              href="images/Manjusri S - Full Stack Developer- Resume.pdf"
+              target="_blank"
+              class="hire-me-btn"
+              >Hire Me</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
